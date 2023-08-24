@@ -168,6 +168,10 @@ h2 {
   background-image: url('../img/krit.png');
 }
 
+.hero__block__left {
+  max-width: 573px;
+}
+
 .hero__block__left__card-top {
   margin-bottom: 24px;
 }
