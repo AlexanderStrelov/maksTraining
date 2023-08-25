@@ -1,3 +1,29 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 700;
+}
+
+:root {
+  font-family: 'Muller', sans-serif;
+}
+
+
 body {
   background: #E5E5E5;
 }
@@ -153,13 +179,25 @@ h2 {
 
 .hero__block__left__card-top,
 .hero__block__left__card-bottom {
+  position: relative;
   padding: 40px 108px 40px 45px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
   border-radius: 15px;
   z-index: 20;
+}
+
+.darken:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%);
 }
 
 .card-top__img {
@@ -182,26 +220,31 @@ h2 {
 
 .hero__block__left__card-top__title,
 .hero__block__left__card-bottom__title {
+  position: relative;
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   color: #FFFFFF;
+  z-index: 99;
 }
 
 .hero__block__left__card-top__descr,
 .hero__block__left__card-bottom__descr {
+  position: relative;
   margin-bottom: 47px;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   color: #FFFFFF;
-  opacity: 0.8;
+  opacity: 0.6;
+  z-index: 99;
 }
 
 .hero__block__card__link,
 .hero__block__left__card-top__link,
 .hero__block__left__card-bottom__link {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -210,6 +253,7 @@ h2 {
   font-size: 16px;
   line-height: 16px;
   color: #F0BF5F;
+  z-index: 99;
 }
 
 
@@ -231,6 +275,11 @@ h2 {
   line-height: 30px;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+.hero__block__right {
+  max-width: 573px;
+  width: 100%;
 }
 
 .hero__block__right__card {
