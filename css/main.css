@@ -233,11 +233,6 @@ h2 {
   opacity: 0.8;
 }
 
-.hero__block__right{
-  max-width: 573px;
-  width: 100%;
-}
-
 .hero__block__right__card {
   display: flex;
   flex-direction: column;
