@@ -131,6 +131,10 @@ h2 {
   color: #CC9933;
 }
 
+.hero {
+  margin-bottom: 70px;
+}
+
 .hero__title {
   font-weight: 400;
   font-size: 40px;
@@ -257,4 +261,8 @@ h2 {
 
 .text__block {
   margin-bottom: 70px;
+}
+
+.desc {
+  margin-top: 70px;
 }
