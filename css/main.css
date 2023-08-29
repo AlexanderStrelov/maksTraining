@@ -99,6 +99,8 @@ h2 {
 
 .tel__top {
   margin: 0;
+  margin-left: 19px;
+  margin-top: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -260,6 +262,7 @@ h2 {
 .hero__block__card__title {
   display: inline-block;
   width: 300px;
+  margin-top: 31px;
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 60px;
